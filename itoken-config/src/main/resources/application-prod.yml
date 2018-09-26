@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: itoken-config
+  boot:
+    admin:
+      client:
+        url: http://192.168.33.131:8084
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/SkyBlueness/itoken
+          search-paths: itoken-config/respo
+          username: 995127604@qq.com
+          password: 520gejinwei
+  zipkin:
+    base-url: http://192.168.33.131:9411
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.33.131:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
