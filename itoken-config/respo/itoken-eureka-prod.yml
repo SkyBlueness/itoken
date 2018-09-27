@@ -9,7 +9,7 @@ eureka:
   instance:
     hostname: host
   client:
-    registerWithEureka: false   #集群应该设置为true
-    fetchRegistry: false        #集群应该设置为true
+    registerWithEureka: true   #集群应该设置为true
+    fetchRegistry: true        #集群应该设置为true
     serviceUrl:
-      defaultZone: http://192.168.33.131:8761/eureka/，http://192.168.33.131:8861/eureka/，http://192.168.33.131:8961/eureka/
+      defaultZone: http://192.168.33.131:8761/eureka/,http://192.168.33.131:8861/eureka/,http://192.168.33.131:8961/eureka/
