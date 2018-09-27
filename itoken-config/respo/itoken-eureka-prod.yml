@@ -1,12 +1,6 @@
 spring:
   application:
     name: itoken-eureka
-  boot:
-    admin:
-      client:
-        url: http://192.168.33.131:8084
-  zipkin:
-    base-url: http://192.168.33.131:9411
 
 server:
   port: 8761
@@ -15,16 +9,7 @@ eureka:
   instance:
     hostname: host
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true //集群应该设置为true
+    fetchRegistry: true  //集群应该设置为true
     serviceUrl:
       defaultZone: http://192.168.33.131:8761/eureka/，http://192.168.33.131:8861/eureka/，http://192.168.33.131:8961/eureka/
-
-management:
-  endpoint:
-    health:
-      show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: health,info
