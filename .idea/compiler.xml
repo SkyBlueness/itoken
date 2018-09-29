@@ -9,14 +9,18 @@
         <module name="itoken-admin" />
         <module name="itoken-config" />
         <module name="itoken-eureka" />
+        <module name="itoken-service-admin" />
         <module name="itoken-zipkin" />
         <module name="itoken-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="itoken-admin" target="1.8" />
+      <module name="itoken-common-service" target="1.8" />
       <module name="itoken-config" target="1.8" />
       <module name="itoken-eureka" target="1.8" />
+      <module name="itoken-service-admin" target="1.8" />
+      <module name="itoken-service-common" target="1.8" />
       <module name="itoken-zipkin" target="1.8" />
       <module name="itoken-zuul" target="1.8" />
     </bytecodeTargetLevel>
