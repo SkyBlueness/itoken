@@ -4,10 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/itoken.iml" filepath="$PROJECT_DIR$/.idea/itoken.iml" />
       <module fileurl="file://$PROJECT_DIR$/itoken-admin/itoken-admin.iml" filepath="$PROJECT_DIR$/itoken-admin/itoken-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itoken-common/itoken-common.iml" filepath="$PROJECT_DIR$/itoken-common/itoken-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/itoken-config/itoken-config.iml" filepath="$PROJECT_DIR$/itoken-config/itoken-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/itoken-eureka/itoken-eureka.iml" filepath="$PROJECT_DIR$/itoken-eureka/itoken-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/itoken-service-admin/itoken-service-admin.iml" filepath="$PROJECT_DIR$/itoken-service-admin/itoken-service-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/itoken-service-common/itoken-service-common.iml" filepath="$PROJECT_DIR$/itoken-service-common/itoken-service-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itoken-web-admin/itoken-web-admin.iml" filepath="$PROJECT_DIR$/itoken-web-admin/itoken-web-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itoken-web-common/itoken-web-common.iml" filepath="$PROJECT_DIR$/itoken-web-common/itoken-web-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/itoken-zipkin/itoken-zipkin.iml" filepath="$PROJECT_DIR$/itoken-zipkin/itoken-zipkin.iml" />
       <module fileurl="file://$PROJECT_DIR$/itoken-zuul/itoken-zuul.iml" filepath="$PROJECT_DIR$/itoken-zuul/itoken-zuul.iml" />
     </modules>
