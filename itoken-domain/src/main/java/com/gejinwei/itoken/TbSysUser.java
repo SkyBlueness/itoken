@@ -1,8 +1,10 @@
-package com.gejinwei.itokenserviceadmin.pojo;
+package com.gejinwei.itoken;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.Date;
-import javax.persistence.*;
 
 @Table(name = "tb_sys_user")
 public class TbSysUser {
