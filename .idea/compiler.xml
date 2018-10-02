@@ -9,9 +9,11 @@
         <module name="itoken-admin" />
         <module name="itoken-common" />
         <module name="itoken-config" />
+        <module name="itoken-domain" />
         <module name="itoken-eureka" />
         <module name="itoken-service-admin" />
         <module name="itoken-service-redis" />
+        <module name="itoken-service-sso" />
         <module name="itoken-web-admin" />
         <module name="itoken-web-common" />
         <module name="itoken-zipkin" />
@@ -23,10 +25,12 @@
       <module name="itoken-common" target="1.8" />
       <module name="itoken-common-service" target="1.8" />
       <module name="itoken-config" target="1.8" />
+      <module name="itoken-domain" target="1.8" />
       <module name="itoken-eureka" target="1.8" />
       <module name="itoken-service-admin" target="1.8" />
       <module name="itoken-service-common" target="1.8" />
       <module name="itoken-service-redis" target="1.8" />
+      <module name="itoken-service-sso" target="1.8" />
       <module name="itoken-web-admin" target="1.8" />
       <module name="itoken-web-common" target="1.8" />
       <module name="itoken-zipkin" target="1.8" />
