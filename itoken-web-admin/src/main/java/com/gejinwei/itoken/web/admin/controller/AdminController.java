@@ -13,7 +13,7 @@ public class AdminController {
     AdminService adminService;
 
     @RequestMapping(value = {"","login"},method = RequestMethod.GET)
-    public String login(){
+    public String login() throws Exception {
         String json = adminService.login("", "");
         System.out.println(json);
         return "index";

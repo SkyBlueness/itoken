@@ -28,23 +28,25 @@ public class AdminController {
         return BaseResult.ok();
     }
 
+    @GetMapping("/login")
     public BaseResult login(String loginCode,String password){
         TbSysUser tbSysUser = adminService.login(loginCode, password);
         BaseResult baseResult = checkLogin(loginCode, password);
         if(baseResult != null){
             return baseResult;
+        }else {
+            if (tbSysUser != null){
+                //登录成功
+                return BaseResult.ok(tbSysUser);
+            }else {
+                //登录失败
+                BaseResult.Error error = new BaseResult.Error("","登录失败");
+                List<BaseResult.Error>errors = new ArrayList<>();
+                errors.add(error);
+                return (BaseResult) BaseResult.notOk(errors);
+            }
         }
 
-        if (tbSysUser != null){
-            //登录成功
-            return BaseResult.ok(tbSysUser);
-        }else {
-            //登录失败
-            BaseResult.Error error = new BaseResult.Error("","登录失败");
-            List<BaseResult.Error>errors = new ArrayList<>();
-            errors.add(error);
-            return (BaseResult) BaseResult.notOk(errors);
-        }
     }
 
     /**
@@ -57,12 +59,10 @@ public class AdminController {
         BaseResult baseResult = null;
         List<BaseResult.Error> errors = new ArrayList<>();
         if (StringUtils.isEmpty(loginCode)){
-
             BaseResult.Error error = new BaseResult.Error();
             error.setFeild("loginCode");
             error.setMessage("用户名不能为空");
             errors.add(error);
-
         }
         if(StringUtils.isEmpty(password)){
             BaseResult.Error error = new BaseResult.Error();

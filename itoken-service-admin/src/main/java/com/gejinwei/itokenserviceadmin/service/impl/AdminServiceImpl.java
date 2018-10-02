@@ -26,8 +26,10 @@ public class AdminServiceImpl implements AdminService {
         Example example = new Example(TbSysUser.class);
         example.createCriteria().andEqualTo("loginCode",username);
         TbSysUser tbSysUser = tbSysUserMapper.selectOneByExample(example);
-        if(password.equals(tbSysUser.getPassword())){
-            return tbSysUser;
+        if (tbSysUser != null){
+            if(password.equals(tbSysUser.getPassword())){
+                return tbSysUser;
+            }
         }
         return null;
     }
