@@ -1,6 +1,6 @@
 package com.gejinwei.itokenserviceadmin.service;
 
-import com.gejinwei.itokenserviceadmin.pojo.TbSysUser;
+import com.gejinwei.itoken.pojo.TbSysUser;
 
 public interface AdminService {
     /**

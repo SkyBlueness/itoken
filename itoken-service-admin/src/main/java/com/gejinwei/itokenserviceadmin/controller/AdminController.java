@@ -1,7 +1,7 @@
 package com.gejinwei.itokenserviceadmin.controller;
 
+import com.gejinwei.itoken.pojo.TbSysUser;
 import com.gejinwei.itoken.utils.BaseResult;
-import com.gejinwei.itokenserviceadmin.pojo.TbSysUser;
 import com.gejinwei.itokenserviceadmin.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;

@@ -2,6 +2,7 @@ package com.gejinwei.itoken.service.redis.service.impl;
 
 import com.gejinwei.itoken.service.redis.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 

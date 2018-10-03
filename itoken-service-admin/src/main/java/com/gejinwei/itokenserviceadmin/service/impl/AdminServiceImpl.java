@@ -1,7 +1,7 @@
 package com.gejinwei.itokenserviceadmin.service.impl;
 
-import com.gejinwei.itokenserviceadmin.mapper.TbSysUserMapper;
-import com.gejinwei.itokenserviceadmin.pojo.TbSysUser;
+import com.gejinwei.itoken.mapper.TbSysUserMapper;
+import com.gejinwei.itoken.pojo.TbSysUser;
 import com.gejinwei.itokenserviceadmin.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,10 +16,10 @@ public class AdminServiceImpl implements AdminService {
     private TbSysUserMapper tbSysUserMapper;
 
     @Transactional(readOnly = false)
-    @Override
     public void register(TbSysUser tbSysUser) {
         tbSysUserMapper.insert(tbSysUser);
     }
+
 
     @Override
     public TbSysUser login(String username, String password) {

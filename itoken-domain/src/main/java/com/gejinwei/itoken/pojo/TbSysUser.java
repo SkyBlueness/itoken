@@ -1,4 +1,4 @@
-package com.gejinwei.itoken;
+package com.gejinwei.itoken.pojo;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
