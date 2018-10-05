@@ -4,12 +4,12 @@ spring:
   boot:
     admin:
       client:
-        url: http://192.168.33.131:8084
+        url: http://localhost:8084
   zipkin:
-    base-url: http://192.168.33.131:9411
+    base-url: http://localhost:9411
   datasource:
     druid:
-      url: jdbc:mysql://localhost:3306/itoken-service-ports?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      url: jdbc:mysql://localhost:3306/itoken-service-posts?useUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
       password: root
       initial-size: 1
@@ -19,16 +19,16 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
 
 server:
-  port: 8501
+  port: 8504
 
 mybatis:
-  type-aliases-package: com.gejinwei.itoken.service.ports.pojo
+  type-aliases-package: com.gejinwei.itoken.service.posts.pojo
   mapper-locations: classpath:mapper/*.xml
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.33.131:8761/eureka/,http://192.168.33.131:8861/eureka/,http://192.168.33.131:8961/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 management:
   endpoint:
