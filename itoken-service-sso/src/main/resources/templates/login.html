@@ -2,9 +2,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-adge">
+    <title>iToken | 登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" th:href="@{{DNS_URL}/bower_components/bootstrap/dist/css/bootstrap.min.css(DNS_URL=${DNS_URL})}" >
+    <link rel="stylesheet" th:href="@{{DNS_URL}/bower_components/font-awesome/css/font-awesome.min.css(DNS_URL=${DNS_URL})}">
+    <link rel="stylesheet" th:href="@{{DNS_URL}/bower_components/Ionicons/css/ionicons.min.css(DNS_URL=${DNS_URL})}">
+    <link rel="stylesheet" th:href="@{{DNS_URL}/dist/css/AdminLTE.min.css(DNS_URL=${DNS_URL})}">
+    <link rel="stylesheet" th:href="@{{DNS_URL}/plugins/iCheck/square/blue.css(DNS_URL=${DNS_URL})}">
 </head>
-<body>
-    login
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <a href="#">iToken</a>
+    </div>
+
+    <div class="login-box-body">
+        <th:block th:if="${tbSysUser != null}">
+            <p class="login-box-msg">欢迎[[${tbSysUser.userName}]]回来</p>
+        </th:block>
+        <th:block th:if="${tbSysUser == null}">
+            <p class="login-box-msg">欢迎管理员登录</p>
+            <form method="post" action="/login">
+                <input type="hidden" th:value="${url}" name="url">
+                <div class="alert alert-danger alert-dismissable" th:if="${message != null}" th:text="${message}">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidde="true">&times;</button>
+                </div>
+                <div class="form-group has-feedback">
+                    <input name="loginCode" type="email" class="form-control" placeholder="邮箱">
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input name="password" type="password" class="form-control" placeholder="密码">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="checkbox icheck">
+                            <label>
+                                <input name="isRemember" type="checkbox"/>记住我
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat" >登录</button>
+                    </div>
+                </div>
+            </form>
+            <a href="#">忘记密码?</a><br>
+        </th:block>
+    </div>
+</div>
+<script th:src="@{{DNS_URL}/bower_components/jquery/dist/jquery.min.js(DNS_URL=${DNS_URL})}"></script>
 </body>
 </html>

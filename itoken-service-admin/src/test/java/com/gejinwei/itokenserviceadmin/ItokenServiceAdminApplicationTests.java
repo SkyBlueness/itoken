@@ -1,7 +1,8 @@
 package com.gejinwei.itokenserviceadmin;
 
-import com.gejinwei.itokenserviceadmin.pojo.TbSysUser;
-import com.gejinwei.itokenserviceadmin.service.AdminService;
+import com.gejinwei.itoken.admin.ItokenServiceAdminApplication;
+import com.gejinwei.itoken.interceptor.pojo.TbSysUser;
+import com.gejinwei.itoken.admin.service.AdminService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,27 +16,6 @@ import java.util.UUID;
 @SpringBootTest(classes = ItokenServiceAdminApplication.class)
 public class ItokenServiceAdminApplicationTests {
 
-    @Autowired
-    private AdminService adminService;
 
-    @Test
-    public void adminResgister() {
-        TbSysUser tbSysUser = new TbSysUser();
-        tbSysUser.setUserCode(UUID.randomUUID().toString());
-        tbSysUser.setLoginCode("995127604@qq.com");
-        tbSysUser.setPassword("123456");
-        tbSysUser.setCreateDate(new Date());
-        tbSysUser.setUserName("gejinwei");
-        tbSysUser.setUserType("0");
-        tbSysUser.setMgrType("1");
-        tbSysUser.setCreateBy(tbSysUser.getLoginCode());
-        tbSysUser.setUpdateBy(tbSysUser.getLoginCode());
-        tbSysUser.setUpdateDate(new Date());
-        tbSysUser.setCorpCode("0");
-        tbSysUser.setCorpName("123");
-        tbSysUser.setStatus("0");
-        adminService.register(tbSysUser);
-
-    }
 
 }
