@@ -13,7 +13,7 @@
 
         <!-- 配置 tk.mybatis 插件 -->
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="tk.mybatis.utils.MyMapper"/>
+            <property name="mappers" value="com.gejinwei.itoken.service.posts.utils.MyMapper"/>
         </plugin>
 
         <!-- 配置数据库连接 -->
@@ -39,7 +39,7 @@
         <!-- 配置需要生成的表，% 代表所有 -->
         <table tableName="tb_posts_post">
             <!-- mysql 配置 -->
-            <generatedKey column="id" sqlStatement="Mysql" identity="false"/>
+            <generatedKey column="post_guid" sqlStatement="Mysql" identity="false"/>
         </table>
     </context>
 </generatorConfiguration>

@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gejinwei</groupId>
-    <artifactId>itoken-service-ports</artifactId>
+    <artifactId>itoken-service-posts</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>itoken-service-ports</name>
+    <name>itoken-service-posts</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -37,6 +37,11 @@
                     <verbose>true</verbose>
                 </configuration>
                 <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>5.1.47</version>
+                    </dependency>
                     <dependency>
                         <groupId>tk.mybatis</groupId>
                         <artifactId>mapper</artifactId>

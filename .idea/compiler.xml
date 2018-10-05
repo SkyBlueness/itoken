@@ -12,7 +12,7 @@
         <module name="itoken-domain" />
         <module name="itoken-eureka" />
         <module name="itoken-service-admin" />
-        <module name="itoken-service-ports" />
+        <module name="itoken-service-posts" />
         <module name="itoken-service-redis" />
         <module name="itoken-service-sso" />
         <module name="itoken-web-admin" />
@@ -30,7 +30,7 @@
       <module name="itoken-eureka" target="1.8" />
       <module name="itoken-service-admin" target="1.8" />
       <module name="itoken-service-common" target="1.8" />
-      <module name="itoken-service-ports" target="1.8" />
+      <module name="itoken-service-posts" target="1.8" />
       <module name="itoken-service-redis" target="1.8" />
       <module name="itoken-service-sso" target="1.8" />
       <module name="itoken-web-admin" target="1.8" />

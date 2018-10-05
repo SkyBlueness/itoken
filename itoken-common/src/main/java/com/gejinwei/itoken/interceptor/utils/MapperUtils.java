@@ -225,4 +225,7 @@ public class MapperUtils {
     public static <T> T obj2pojo(Object obj, Class<T> clazz) {
         return objectMapper.convertValue(obj, clazz);
     }
+
+    public static void json2pojo(String postsJson) {
+    }
 }
