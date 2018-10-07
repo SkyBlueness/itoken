@@ -1,13 +1,15 @@
 package com.gejinwei.itoken.interceptor.service.sso.service.impl;
 
-import com.gejinwei.itoken.interceptor.mapper.TbSysUserMapper;
-import com.gejinwei.itoken.interceptor.pojo.TbSysUser;
 import com.gejinwei.itoken.interceptor.service.sso.consumer.RedisService;
+import com.gejinwei.itoken.interceptor.service.sso.mapper.TbSysUserMapper;
+import com.gejinwei.itoken.interceptor.service.sso.pojo.TbSysUser;
 import com.gejinwei.itoken.interceptor.service.sso.service.SsoService;
 import com.gejinwei.itoken.interceptor.utils.MapperUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
+
+import java.util.List;
 
 @Service
 public class SsoServiceImpl implements SsoService {

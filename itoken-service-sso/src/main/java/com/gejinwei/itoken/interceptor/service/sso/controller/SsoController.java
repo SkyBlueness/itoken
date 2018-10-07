@@ -1,7 +1,7 @@
 package com.gejinwei.itoken.interceptor.service.sso.controller;
 
-import com.gejinwei.itoken.interceptor.pojo.TbSysUser;
 import com.gejinwei.itoken.interceptor.service.sso.consumer.RedisService;
+import com.gejinwei.itoken.interceptor.service.sso.pojo.TbSysUser;
 import com.gejinwei.itoken.interceptor.service.sso.service.SsoService;
 import com.gejinwei.itoken.interceptor.utils.CookieUtil;
 import com.gejinwei.itoken.interceptor.utils.MapperUtils;

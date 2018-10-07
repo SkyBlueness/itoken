@@ -22,6 +22,8 @@
         <option value="$PROJECT_DIR$/itoken-service-sso/pom.xml" />
         <option value="$PROJECT_DIR$/itoken-service-ports/pom.xml" />
         <option value="$PROJECT_DIR$/itoken-service-posts/pom.xml" />
+        <option value="$PROJECT_DIR$/itoken-web-posts/pom.xml" />
+        <option value="$PROJECT_DIR$/itoken-service-upload/pom.xml" />
       </list>
     </option>
   </component>

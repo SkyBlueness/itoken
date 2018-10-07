@@ -15,8 +15,10 @@
         <module name="itoken-service-posts" />
         <module name="itoken-service-redis" />
         <module name="itoken-service-sso" />
+        <module name="itoken-service-upload" />
         <module name="itoken-web-admin" />
         <module name="itoken-web-common" />
+        <module name="itoken-web-posts" />
         <module name="itoken-zipkin" />
         <module name="itoken-zuul" />
       </profile>
@@ -33,8 +35,10 @@
       <module name="itoken-service-posts" target="1.8" />
       <module name="itoken-service-redis" target="1.8" />
       <module name="itoken-service-sso" target="1.8" />
+      <module name="itoken-service-upload" target="1.8" />
       <module name="itoken-web-admin" target="1.8" />
       <module name="itoken-web-common" target="1.8" />
+      <module name="itoken-web-posts" target="1.8" />
       <module name="itoken-zipkin" target="1.8" />
       <module name="itoken-zuul" target="1.8" />
     </bytecodeTargetLevel>

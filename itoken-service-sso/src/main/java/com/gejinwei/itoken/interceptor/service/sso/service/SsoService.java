@@ -1,6 +1,7 @@
 package com.gejinwei.itoken.interceptor.service.sso.service;
 
-import com.gejinwei.itoken.interceptor.pojo.TbSysUser;
+
+import com.gejinwei.itoken.interceptor.service.sso.pojo.TbSysUser;
 
 /**
  * sso业务

@@ -1,6 +1,6 @@
 package tk.mybatis.utils;
 
-import tk.mybatis.mapper.common.Mapper;
+import org.apache.ibatis.annotations.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;
 
 /**
@@ -13,5 +13,5 @@ import tk.mybatis.mapper.common.MySqlMapper;
  * @version 1.0.0
  * @date 2018/5/29 0:57
  */
-public interface MyMapper<T> extends Mapper<T>, MySqlMapper<T> {
+public interface MyMapper<T> extends Mapper, MySqlMapper<T> {
 }

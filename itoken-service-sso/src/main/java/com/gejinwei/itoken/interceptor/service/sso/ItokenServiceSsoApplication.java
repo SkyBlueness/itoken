@@ -13,7 +13,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @EnableFeignClients
 @EnableDiscoveryClient
 @EnableEurekaClient
-@MapperScan(basePackages = "com.gejinwei.itoken.interceptor.mapper")
+@MapperScan(basePackages = "com.gejinwei.itoken.interceptor.service.sso.mapper")
 public class ItokenServiceSsoApplication {
 
     public static void main(String[] args) {
